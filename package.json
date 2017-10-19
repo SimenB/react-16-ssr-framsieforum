@@ -15,6 +15,18 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "prettier"
+    ],
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": ["error", { "trailingComma": "all", "singleQuote": true }]
+    }
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "prettier": "^1.7.4"
   }
 }
